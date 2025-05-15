@@ -11,14 +11,13 @@ platforms = ["win-64", "linux-64", "osx-arm64", "osx-64"]
 preview = ["pixi-build"]
 
 [dependencies] 
-python_rich_mgr = { path = "." }
-python_rich = { path = "pkgs/python_rich" }
+python_rich = { path = "." }
 
 [tasks] 
 start = "rich-example-main"
 
 [package] 
-name = "python_rich_mgr"
+name = "python_rich"
 version = "0.1.0"
 
 [package.build] 

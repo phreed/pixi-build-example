@@ -1,5 +1,4 @@
 from dataclasses import dataclass, fields
-from rich.console import Console
 from rich.table import Table
 
 
@@ -10,22 +9,15 @@ class Person:
     city: str
 
 
-def main() -> None:
-    console = Console()
-
-    people = [
-        Person("John Doe", 30, "New York"),
-        Person("Jane Smith", 25, "Los Angeles"),
-        Person("Tim de Jager", 35, "Utrecht"),
-    ]
-
-    table = Table()
-
+def add_columns_fields(table: Table) -> Table:
     for column in fields(Person):
         table.add_column(column.name)
+    return table
 
+
+def add_rows(table: Table, people) -> Table:
     for person in people:
         table.add_row(person.name, str(person.age), person.city)
+    return table
 
-    console.print(table)
     
