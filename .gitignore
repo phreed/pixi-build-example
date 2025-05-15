@@ -4,3 +4,4 @@
 *.egg-info
 *.conda
 *.pyc
+__pycache__/
