@@ -15,9 +15,6 @@ requires = ["hatchling"]
 python_rich = { path = "." }
 cpp_math = { path = "pkgs/cpp_math"}
 
-[tool.pixi.tasks] 
-start = "rich-example-main"
-
 [tool.pixi.package] 
 name = "python_rich"
 version = "0.1.0"

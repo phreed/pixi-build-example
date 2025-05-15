@@ -757,7 +757,7 @@ packages:
   - rich 13.9.*
   - python
   input:
-    hash: 277bb6832b1c557891749b51d1f69d573094d02099597ff8df562eb6a37e9416
+    hash: 5435ad75b891416dda48480db6027ae9152d1bdb6c892473071463c759f8c8b5
     globs:
     - pyproject.toml
 - conda: .
