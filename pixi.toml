@@ -12,6 +12,7 @@ preview = ["pixi-build"]
 
 [dependencies] 
 python_rich = { path = "." }
+cpp_math = { path = "pkgs/cpp_math" }
 
 [tasks] 
 start = "rich-example-main"
