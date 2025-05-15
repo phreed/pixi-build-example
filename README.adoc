@@ -2,3 +2,19 @@
 
 A place to try out different structures.
 
+I made a sample project.
+First I replicated the sample from https://pixi.sh/latest/build/python/ in a branch,
+https://github.com/phreed/pixi-build-example/tree/00_original
+It works as advertised.
+
+Next, I replicated the example from https://pixi.sh/latest/build/workspace/ in a branch,
+https://github.com/phreed/pixi-build-example/tree/01-multi-cmath
+Also, works as advertised.
+
+Now, I split the python piece into a driver and a library, in a branch
+https://github.com/phreed/pixi-build-example/tree/01-multi-pkg
+It seems to still work.
+
+I will see if it will continue to work if I merge the pixi.toml into the pyproject.toml.
+Do these examples already exist somewhere?
+

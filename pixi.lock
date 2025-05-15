@@ -757,9 +757,9 @@ packages:
   - rich 13.9.*
   - python
   input:
-    hash: 52b2d6cb20db661b3fdeb47a4cd5a34af5ea7e127d5e1c0229fb0d23349f9530
+    hash: 277bb6832b1c557891749b51d1f69d573094d02099597ff8df562eb6a37e9416
     globs:
-    - pixi.toml
+    - pyproject.toml
 - conda: .
   name: python_rich_mgr
   version: 0.1.0

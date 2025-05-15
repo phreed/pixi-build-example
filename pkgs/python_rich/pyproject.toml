@@ -8,3 +8,25 @@ version = "0.1.0"
 [build-system] 
 build-backend = "hatchling.build"
 requires = ["hatchling"]
+
+[tool.pixi]
+
+[tool.pixi.dependencies] 
+python_rich = { path = "." }
+cpp_math = { path = "pkgs/cpp_math"}
+
+[tool.pixi.tasks] 
+start = "rich-example-main"
+
+[tool.pixi.package] 
+name = "python_rich"
+version = "0.1.0"
+
+[tool.pixi.package.build] 
+backend = { name = "pixi-build-python", version = "0.1.*" }
+
+[tool.pixi.package.host-dependencies] 
+hatchling = "==1.26.3"
+
+[tool.pixi.package.run-dependencies] 
+rich = "13.9.*"
