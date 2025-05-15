@@ -12,6 +12,7 @@ preview = ["pixi-build"]
 
 [dependencies] 
 python_rich_mgr = { path = "." }
+cpp_math = { path = "pkgs/cpp_math" }
 python_rich = { path = "pkgs/python_rich" }
 
 [tasks] 

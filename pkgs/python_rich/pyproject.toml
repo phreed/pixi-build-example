@@ -2,7 +2,7 @@
 dependencies = ["rich"]                              
 name = "python_rich"
 requires-python = ">= 3.11"
-scripts = { rich-example-main = "python_rich:main" } 
+scripts = { rich-example-main = "python_rich_mgr:main" } 
 version = "0.1.0"
 
 [build-system] 

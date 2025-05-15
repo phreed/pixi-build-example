@@ -15,8 +15,7 @@ def main() -> None:
     
     table = Table()
 
-    table = python_rich.show_fields(table)
-    table = python_rich.add_rows(people, table)
+    table = python_rich.add_columns(table)
+    table = python_rich.add_rows(table, people)
 
     console.print(table)
-    
