@@ -3,3 +3,4 @@
 .pixi
 *.egg-info
 *.conda
+__pycache__/
