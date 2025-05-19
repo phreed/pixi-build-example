@@ -35,10 +35,10 @@ environments:
       - conda: https://prefix.dev/conda-forge/linux-64/tk-8.6.13-noxft_h4845f30_101.conda
       - conda: https://prefix.dev/conda-forge/noarch/typing_extensions-4.13.2-pyh29332c3_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
-      - conda: .
       - conda: pkgs/cpp_math
         subdir: linux-64
       - conda: pkgs/python_rich
+      - conda: pkgs/python_rich_mgr
       osx-64:
       - conda: https://prefix.dev/conda-forge/osx-64/bzip2-1.0.8-hfdf4475_7.conda
       - conda: https://prefix.dev/conda-forge/noarch/ca-certificates-2025.4.26-hbd8a1cb_0.conda
@@ -60,10 +60,10 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-64/tk-8.6.13-h1abcd95_1.conda
       - conda: https://prefix.dev/conda-forge/noarch/typing_extensions-4.13.2-pyh29332c3_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
-      - conda: .
       - conda: pkgs/cpp_math
         subdir: osx-64
       - conda: pkgs/python_rich
+      - conda: pkgs/python_rich_mgr
       osx-arm64:
       - conda: https://prefix.dev/conda-forge/osx-arm64/bzip2-1.0.8-h99b78c6_7.conda
       - conda: https://prefix.dev/conda-forge/noarch/ca-certificates-2025.4.26-hbd8a1cb_0.conda
@@ -85,10 +85,10 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/tk-8.6.13-h5083fa2_1.conda
       - conda: https://prefix.dev/conda-forge/noarch/typing_extensions-4.13.2-pyh29332c3_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
-      - conda: .
       - conda: pkgs/cpp_math
         subdir: osx-arm64
       - conda: pkgs/python_rich
+      - conda: pkgs/python_rich_mgr
       win-64:
       - conda: https://prefix.dev/conda-forge/win-64/bzip2-1.0.8-h2466b09_7.conda
       - conda: https://prefix.dev/conda-forge/noarch/ca-certificates-2025.4.26-h4c7d964_0.conda
@@ -110,10 +110,10 @@ environments:
       - conda: https://prefix.dev/conda-forge/win-64/ucrt-10.0.22621.0-h57928b3_1.conda
       - conda: https://prefix.dev/conda-forge/win-64/vc-14.3-h2b53caa_26.conda
       - conda: https://prefix.dev/conda-forge/win-64/vc14_runtime-14.42.34438-hfd919c2_26.conda
-      - conda: .
       - conda: pkgs/cpp_math
         subdir: win-64
       - conda: pkgs/python_rich
+      - conda: pkgs/python_rich_mgr
 packages:
 - conda: https://prefix.dev/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
   sha256: fe51de6107f9edc7aa4f786a70f4a883943bc9d39b3bb7307c04c41410990726
@@ -816,7 +816,7 @@ packages:
     hash: 3e3cc5a76f622773b9d31f2776e3ef891eed82473e77767b8bd4d11f61774105
     globs:
     - pyproject.toml
-- conda: .
+- conda: pkgs/python_rich_mgr
   name: python_rich_mgr
   version: 0.1.0
   build: pyhbf21a9e_0
@@ -825,9 +825,9 @@ packages:
   - rich 13.9.*
   - python
   input:
-    hash: fa1ebdbcc5cb7750e64e2029c88d78595e743af00186974deef3df91064df2b1
+    hash: 3bbc3c5ad3eecddbad841539467a5350e15a784ad92934055d96f35e863581d3
     globs:
-    - pixi.toml
+    - pyproject.toml
 - conda: https://prefix.dev/conda-forge/linux-64/readline-8.2-h8c095d6_2.conda
   sha256: 2d6d0c026902561ed77cd646b5021aef2d4db22e57a5b0178dfc669231e06d2c
   md5: 283b96675859b20a825f8fa30f311446
