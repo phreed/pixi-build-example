@@ -9,35 +9,3 @@ requires-python = ">= 3.11"
 scripts = { rich-example-main = "python_rich_mgr:main" } 
 version = "0.1.0"
 
-[tool.pixi.workspace]
-authors = ["Fredrick Eisele <fred.eisele@vanderbilt.edu>"]
-name = "pixi-build-example"
-version = "0.1.0"
-
-channels = [
-  "https://prefix.dev/pixi-build-backends",
-  "https://prefix.dev/conda-forge",
-]
-platforms = ["win-64", "linux-64", "osx-arm64", "osx-64"]
-preview = ["pixi-build"]
-
-[tool.pixi.dependencies] 
-python_rich_mgr = { path = "." }
-cpp_math = { path = "pkgs/cpp_math" }
-python_rich = { path = "pkgs/python_rich" }
-
-[tool.pixi.tasks] 
-start = "rich-example-main"
-
-[tool.pixi.package] 
-name = "python_rich_mgr"
-version = "0.1.0"
-
-[tool.pixi.package.build] 
-backend = { name = "pixi-build-python", version = "0.1.*" }
-
-[tool.pixi.package.host-dependencies] 
-hatchling = "==1.26.3"
-
-[tool.pixi.package.run-dependencies] 
-rich = "13.9.*"
