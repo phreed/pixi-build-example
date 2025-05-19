@@ -9,12 +9,20 @@ requires-python = ">= 3.11"
 scripts = { rich-example-main = "python_rich_mgr:main" } 
 version = "0.1.0"
 
+[tool.pixi.dependencies] 
+python_rich_mgr = { path = "." }
+cpp_math = { path = "pkgs/python_rich"}
+
 [tool.pixi.package] 
 name = "python_rich_mgr"
 version = "0.1.0"
 
 [tool.pixi.package.build] 
 backend = { name = "pixi-build-python", version = "0.1.*" }
+channels = [
+  "https://prefix.dev/pixi-build-backends",
+  "https://prefix.dev/conda-forge",
+]
 
 [tool.pixi.package.host-dependencies] 
 hatchling = "==1.26.3"
