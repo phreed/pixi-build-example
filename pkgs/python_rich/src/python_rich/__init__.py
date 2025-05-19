@@ -23,7 +23,7 @@ def add_columns(table: Table) -> Table:
 
 def add_rows(table: Table, people: List[Person]) -> Table:
     for person in people:
-        updated_age = cpp_math.add(person.age, 1)
+        updated_age = cpp_math.add(person.age, 10)
         table.add_row(person.name, str(updated_age), person.city)
     return table
 
